@@ -12,7 +12,6 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar>
           <Routes>
             <Route path='/' element={<Shop/>}></Route>
             <Route path='/mens' element={<ShopCategory category = "mens"/>}></Route>
@@ -25,9 +24,6 @@ function App() {
             <Route path='/cart' element={<Cart/>}></Route>
             <Route path='/login' element={<LoginSignpu/>}></Route>
           </Routes>
-
-        </Navbar>
-        <Hero/>
       </BrowserRouter>
     </div>
   );
